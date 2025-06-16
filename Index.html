@@ -54,7 +54,7 @@
              transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
          }
 
-        #imageUrlInput::placeholder { color: #9ca3af; }
+        #imageUrlInput::placeholder { color: #000000; }
         #imageUrlInput:focus {
              outline: none;
              border-color: #4f46e5;
@@ -113,7 +113,7 @@
         <div class="clock-widget widget-container">
             <canvas id="clockCanvas" width="500" height="500"></canvas>
             <div class="w-full">
-                <input type="text" id="imageUrlInput" placeholder="Enter image URL for clock background..." />
+                <input type="text" id="imageUrlInput" placeholder="I Love Alishahi..." />
             </div>
             <div id="errorMessage" style="display: none;"></div>
         </div>
@@ -215,7 +215,7 @@
             let minuteAngle = (minutes + seconds / 60) * Math.PI / 30 - Math.PI / 2;
             drawHand(minuteAngle, radius * 0.75, 6, '#000000');
             let secondAngle = (seconds * Math.PI / 30) - Math.PI / 2;
-            drawHand(secondAngle, radius * 0.9, 3, '#e63946');
+            drawHand(secondAngle, radius * 0.9, 3, '#000000');
 
             ctx.beginPath();
             ctx.arc(center, center, 8, 0, 2 * Math.PI);
@@ -240,10 +240,12 @@
         
         // --- PART 2: POLL SCRIPT ---
         const pollData = [
-            { option: "Isabella Rossi", votes: 0 }, { option: "Kenji Tanaka", votes: 0 },
-            { option: "Fatima Al-Jamil", votes: 0 }, { option: "David Chen", votes: 0 },
-            { option: "Sofia Petrova", votes: 0 }, { option: "Marcus Williams", votes: 0 },
-            { option: "Chloe Dubois", votes: 0 }, { option: "Liam O'Connell", votes: 0 }
+            { option: "Alireza Zakooni", votes: 0 }, { option: "Ali Akbar Raefipour", votes: 0 },
+            { option: "Mohsen Rezaie Mirqaed", votes: 0 }, { option: "Akele Sadat Zabihpour", votes: 0 },
+            { option: "Mehran Rajabi", votes: 0 }, { option: "Sayed Mohammad Khatami", votes: 0 },
+            { option: "Seyed Tiri Hasan", votes: 0 }, { option: "Ali Motahari", votes: 0 },
+            { option: "Zarif & Iraqchi Group", votes: 0 }, { option: "Mohammad-Bagher Khalibaf", votes: 0 },
+            { option: "Alireza Garaei Goozoo", votes: 0 }, { option: "Reza Alishahi", votes: 0 }
         ];
         const pollTitle = document.getElementById('poll-title');
         const pollContent = document.getElementById('poll-content');
